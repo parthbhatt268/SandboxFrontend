@@ -22,3 +22,42 @@ step 3 - Run command in terminal
 
 Q3) What do we use to mock HTTPS service in JEST 
 MSW - Mock Service worker is an website you can check is used to mock the API response
+
+
+Q4)  How to create Mongo Database (Setup and Inital steps)
+1. go to https://cloud.mongodb.com/v2/63db8b7d20187552f9c1d6bf#/overview mongo atlas
+2. sign in with any account or rapidbasketo@gmail.com
+3. in folder section in top left click on create new project
+4. give name and click create project
+5. select provider
+6. then select user name and password option and then set username and pasword for that one useer who 
+can have access to the read and write in database.
+7. then provide IP address that will be allowed to hit your database
+genreally give 0.0.0.0 to white list all the address
+8. after that clcick on connect and choose a medium to connect.
+9. select Compass as option
+10. You want have it so click on i dont have and select MSI link for installiation
+11. No there will be one string/link given copy that and paste it in Compass
+12. After installing the compass app then paste the copied link in that section.
+13. and got to authentication tab and provide Username and password you used when creating user in website in Atlas.
+14. click connect
+-------Installation and setup complete------
+15.`Now go to Atlas website and  go on that cluster which you created cluster0 in my case and then click on add data
+16. then clcick on crrate database and click on start and creata database and collection in website atlas
+17. clcik on referesh on compmass desktop app to get the same databse here on your laptop
+------Now create backend---------
+18. npm init to setup base script for backend clcick yes i all
+19. then in script section add 
+    "dev": "node index"
+19.1) Create app.js file and setup expressJS
+19.2) install express npm i express and body-parse  
+20. so that whenever you do npm run dev the backedn will run
+21. now create .env file in main folder
+22. do npm i dotenv
+23. do npm i mongoose
+24. now npm run dev
+25. //router 
+//middleware
+//main api code - controller
+first you write code for route then you write code for middle ware then you write code for controller
+
