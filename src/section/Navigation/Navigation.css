@@ -1,0 +1,22 @@
+/* Navigation.css */
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #314ece;
+    color: #fff;
+    height: 50px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    border-bottom: 2px solid #fff;
+  }
+  

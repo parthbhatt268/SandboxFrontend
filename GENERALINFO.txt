@@ -1,0 +1,24 @@
+Q1) What is meaning of ^ in the version mention in package.json file
+
+Ans -> The version specified after the caret (^) is the "fixed" version. In your example, it's 11.10.6.
+The caret allows npm to update to the latest version for the specified major version (11.x.x) 
+while respecting backward compatibility.
+So, with "^11.10.6," npm would install versions like 11.10.7, 11.11.0, or any other version 
+with 11 as the major version, as long as it doesn't include breaking changes.
+
+In semantic versioning (SemVer), a version number is represented as MAJOR.MINOR.PATCH. 
+The caret (^) allows for updates in the MINOR and PATCH versions but prevents updates to a 
+new MAJOR version that might introduce breaking changes.
+
+Q2)     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,css,scss}\"" 
+What does this line mean?
+so basically we have to keep common format for every developer so we install prettier and use comomon version for formatting
+step 1 - install prettier npm add --dev --exact prettier --force
+step 2 - go to package json and check if nstall and add one line in scripts section
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,css,scss}\"" 
+This script will format all JS/JSX files, CSS/SCSS files using Prettier</s> and ignore gitignore file...
+step 3 - Run command in terminal
+    > npm run format
+
+Q3) What do we use to mock HTTPS service in JEST 
+MSW - Mock Service worker is an website you can check is used to mock the API response
