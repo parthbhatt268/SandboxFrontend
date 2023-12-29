@@ -24,7 +24,7 @@ Q3) What do we use to mock HTTPS service in JEST
 MSW - Mock Service worker is an website you can check is used to mock the API response
 
 
-Q4)  How to create Mongo Database (Setup and Inital steps)
+Q4)  How to create Mongo Database (Setup and Inital steps) and connecting it to Backend
 1. go to https://cloud.mongodb.com/v2/63db8b7d20187552f9c1d6bf#/overview mongo atlas
 2. sign in with any account or rapidbasketo@gmail.com
 3. in folder section in top left click on create new project
@@ -60,4 +60,6 @@ genreally give 0.0.0.0 to white list all the address
 //middleware
 //main api code - controller
 first you write code for route then you write code for middle ware then you write code for controller
+
+
 

@@ -5,7 +5,7 @@ function SandBox3() {
     <div>
       {
         //This Javascript sandbox
-        2+2
+        
       }
     </div>
   )
